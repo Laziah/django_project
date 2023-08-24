@@ -1,0 +1,91 @@
+#id_password {
+    border: 2px solid;
+}
+
+#id_username {
+    border: 2px solid;
+}
+.bg-dark {
+    background-color: black;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    margin-left: 900px;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e2e2e2;
+
+}
+
+.flex-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 40%;
+    color: white;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('/static/images/logo.jpg');
+    position: relative;
+    background-position: center;
+    background-attachment: scroll;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    /* Set text color for the footer */
+}
+/* Stylying for the card */
+.custom-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the form fields */
+.custom-form .form-control {
+    margin-bottom: 15px;
+}
+
+/* Styling for the submit button */
+.submit {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Center the form vertically */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}

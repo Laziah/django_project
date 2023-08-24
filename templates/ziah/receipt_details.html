@@ -1,0 +1,52 @@
+{% extends 'ziah/base.html'%} {% block content %}
+<br />
+{% load static%}
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+          <img src="{% static 'images/logo.jpg' %}" alt="Logo" width="100" height="100">
+          <h1 class="text-center">  BEREAL MORTO SPARE COMPANY RECIEPT</h1><br>
+          <!-- <h2 class="text-center">Reciept</h2><br> -->
+        </div>
+        <!-- <img src="{% static 'images/logo.jpg' %}" alt="Logo" width="100" height="100"> -->
+      </div>
+      <h2 class="lead" style="color: black;">customer: {{receipt.issued_to|title}}</h2>
+      <div class="card-block">
+        <div class="table-responsive"> 
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <td><strong>Item Name</strong></td>
+                <td class="text-xs-center"><strong>Item Quantity</strong></td>
+                <td class="text-xs-right"><strong>Total Bill(Ugx)</strong></td>
+                <td class="text-xs-right"><strong>Amount Paid(Ugx)</strong></td>
+                <td class="text-xs-right">
+                  <strong>Total change(UgX)</strong>
+                  <td class="text-xs-right"><strong>Phone</strong>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{receipt.item| title}}</td>
+                <td class="text-xs-center">{{receipt.quantity }}</td>
+                <td class="text-xs-right">Ugx{{ receipt.get_change }}</td>
+                <td class="text-xs-center">Ug{{receipt.get_total | title}}</td>
+                <td class="text-xs-right">Ugx{{ receipt.amount_received }}</td>
+                <td class="text-xs-right">Ugx{{ receipt.phone }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card-footer" style="display: flex; justify-content: center; align-items: center;">
+        <p>Thank you for choosing BeReal Motor Spare company. We appreciate your support.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}

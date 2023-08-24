@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <!-- <link rel="stylesheet" type="text/css" href="Admin.css"> -->
+  <link rel="stylesheet" href="be_real.css">
+</head>
+<body>
+  <nav class="navbar" style="background-color: blue;margin-top: 0px;">
+    <div class="max-width">
+        <div class="logo"><a href="#">BRMSPC</span></a></div>
+        <ul class="menu">
+            <li><a href="be_real.html" class="menu-btn">Home</a></li>
+            <li><a href="about.html" class= "menu-btn" >About</a></li>
+            <li><a href="/login"calass="menu-btn-">Login</a></li>
+            <li><a href="contact.html" class="menu-btn">Contact</a></li>
+            <li><a href="/admin"class="menu-btn">Admin</a></li>
+            
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav><br><br>
+    <div class ="van" style="margin-top: 80px;">
+       <div class="container">
+        <form>
+          <h2>Sign Up</h2>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="office number">office number:</label>
+            <select id="office location" name="Office location" required>
+              <option value="">Select</option>
+              <option value="">first floor</option>
+              <option value="">second floor</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="title">Worker's title</title>:</label>
+            <input type="text" id="title" name="Worker's title" required>
+          </div>
+          <div class="form-group">
+            <label for="Role">Admins role:</label></label>
+            <input type="text" id="car-number" name="car-number" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Sign Up">
+            <p>Please endevour to remember that Your password is your Admins code</p>
+            <h1>Log in Form</h1>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+            <div class="form-group">
+                <label for="confirm-password">Admins code:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+              </div>
+            <input type="button" value="Login">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

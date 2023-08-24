@@ -1,0 +1,41 @@
+{% extends 'ziah/base.html' %}
+<!-- Extends the 'base.html' template, allowing reuse of common elements -->
+
+{% load crispy_forms_tags %}
+<!-- Load the crispy forms template tags for rendering forms with crispy styles -->
+
+{% load static %}
+<!-- Load the static files template tag for referencing static assets like CSS and images -->
+
+{% block content %}
+<!-- Define a content block to override in the base template -->
+
+<br/>
+<!-- Insert a line break -->
+
+<div class="container" style="margin-bottom: 70px;">
+<!-- Create a container for the sales form with a margin at the bottom -->
+
+    <form method="POST" action="">
+    <!-- Create a form for the sales input -->
+    
+    <h1 class="text-center">SALES FORM</h1>
+    <!-- Display a centered heading for the sales form -->
+    <br/>
+    
+    {% csrf_token %}
+    <!-- Include the CSRF token for form submission security -->
+    
+    {{ sales_form | crispy }}
+    <!-- Render the sales form fields using crispy styles -->
+    
+    <input type="submit" class="btn btn-secondary btn" type="button" value="complete sale">
+    <!-- Submit button to complete the sale -->
+    
+    </form>
+    
+</div>
+<!-- Close the container -->
+
+{% endblock %}
+<!-- Close the content block -->
